@@ -3,20 +3,10 @@ package tech.vsj.studio;
 public class InsertionSort {
 
     public static void main(String[] args) {
-        int[] array = {45, 12, 85, 32, 89, 39, 69, 44, 42, 1, 6, 8};
-        int temp;
-        for (int i = 1; i < array.length; i++) {
-            for (int j = i; j > 0; j--) {
-                if (array[j] < array[j - 1]) {
-                    temp = array[j];
-                    array[j] = array[j - 1];
-                    array[j - 1] = temp;
-                }
-            }
-        }
-        for (int i = 0; i < array.length; i++) {
-            System.out.println(array[i]);
-        }
-    }
+        System.out.println(Integer.MIN_VALUE);
+        System.out.println(Integer.MAX_VALUE);
+        System.out.println(Integer.MIN_VALUE - 1);
+        System.out.println(Integer.MAX_VALUE + 1);
+      }
 
 }
