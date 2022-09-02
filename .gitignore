@@ -1,6 +1,5 @@
-
-# Created by https://www.toptal.com/developers/gitignore/api/java,maven,eclipse,visualstudiocode,intellij+all
-# Edit at https://www.toptal.com/developers/gitignore?templates=java,maven,eclipse,visualstudiocode,intellij+all
+# Created by https://www.toptal.com/developers/gitignore/api/java,maven,gradle,eclipse,intellij+all,visualstudiocode
+# Edit at https://www.toptal.com/developers/gitignore?templates=java,maven,gradle,eclipse,intellij+all,visualstudiocode
 
 ### Eclipse ###
 .metadata
@@ -226,4 +225,29 @@ buildNumber.properties
 # Ignore code-workspaces
 *.code-workspace
 
-# End of https://www.toptal.com/developers/gitignore/api/java,maven,eclipse,visualstudiocode,intellij+all
+### Gradle ###
+.gradle
+**/build/
+!src/**/build/
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Avoid ignore Gradle wrappper properties
+!gradle-wrapper.properties
+
+# Cache of project
+.gradletasknamecache
+
+# Eclipse Gradle plugin generated files
+# Eclipse Core
+# JDT-specific (Eclipse Java Development Tools)
+
+### Gradle Patch ###
+# Java heap dump
+*.hprof
+
+# End of https://www.toptal.com/developers/gitignore/api/java,maven,gradle,eclipse,intellij+all,visualstudiocode
