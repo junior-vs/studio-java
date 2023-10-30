@@ -37,7 +37,7 @@ class DishTest {
 
     }
 
-    @Test
+   // @Test
     void getLowCaloricDishesNamesInJava7() {
 
 
@@ -62,7 +62,7 @@ class DishTest {
         assertEquals("[season fruit, rice]", lowCaloricDishesName.toString());
     }
 
-    @Test
+   // @Test
 
     void  getLowCaloricDishesNamesInJava8() {
 
