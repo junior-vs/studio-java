@@ -1,3 +1,1 @@
-# studio java
-
-workspace para estudo do java
+# studio-java
