@@ -1,4 +1,4 @@
-package com.vj.studio.modernjava;
+package com.vj.studio.javase.updates;
 
 import java.util.Arrays;
 import java.util.List;
