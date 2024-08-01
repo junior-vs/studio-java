@@ -23,23 +23,12 @@ public class UniEx {
 
     private Logger logger = LoggerFactory.getLogger(UniEx.class);
 
-    public void main(String[] args) throws InterruptedException {
-        // exemplo1();
-        // ex2();
-        // ex3();
-        // ex4();
-        // exUniFromSupplier();
-        // ex5();
-        // uniFromSupplierAndState();
-        // uniDeferred();
-        // uniFromEmitter();
-        // uniFromEmitterAndState();
-        // uniFromFailure();
-        // uniFromCompleteStage();
-        // uniMisc();
-        new UniEx().uniDelay();
+    public static void main(String[] args) {
 
+        new UniEx().exemplo1();
     }
+
+
 
     private void uniDelay() {
         Uni.createFrom().item(666)
