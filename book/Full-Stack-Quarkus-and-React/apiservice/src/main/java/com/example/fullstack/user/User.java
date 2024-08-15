@@ -72,4 +72,13 @@ public class User extends PanacheEntity {
     public List<String> getRoles() {
         return roles;
     }
+
+    public void setPassword(String password) {
+        this.password = BcryptUtil.bcryptHash(password);
+        // TODO: Rehash password;
+    }
+
+    public boolean comparePassword(String password) {
+        return BcryptUtil.matches(password, this.getPassword());
+    }
 }
