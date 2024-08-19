@@ -4,6 +4,7 @@ import com.example.fullstack.user.UserService;
 import io.quarkus.hibernate.reactive.panache.common.WithTransaction;
 import io.quarkus.security.UnauthorizedException;
 import io.smallrye.mutiny.Uni;
+import jakarta.annotation.security.RolesAllowed;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import org.hibernate.ObjectNotFoundException;
@@ -13,6 +14,7 @@ import java.time.ZonedDateTime;
 import java.util.List;
 
 @ApplicationScoped
+@RolesAllowed("user")
 public class TaskService {
 
     private final UserService userService;

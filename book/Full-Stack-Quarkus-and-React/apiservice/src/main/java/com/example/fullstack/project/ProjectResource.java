@@ -1,16 +1,22 @@
 package com.example.fullstack.project;
 
-import jakarta.inject.Inject;
-import jakarta.ws.rs.*;
-
-
 import io.smallrye.mutiny.Uni;
-import jakarta.ws.rs.core.MediaType;
 import org.jboss.resteasy.reactive.ResponseStatus;
 
+import jakarta.annotation.security.RolesAllowed;
+import jakarta.inject.Inject;
+import jakarta.ws.rs.Consumes;
+import jakarta.ws.rs.DELETE;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.POST;
+import jakarta.ws.rs.PUT;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.PathParam;
+import jakarta.ws.rs.core.MediaType;
 import java.util.List;
 
 @Path("/api/v1/projects")
+@RolesAllowed("user")
 public class ProjectResource {
 
     private final ProjectService projectService;
