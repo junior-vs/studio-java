@@ -81,4 +81,8 @@ public class User extends PanacheEntity {
     public boolean comparePassword(String password) {
         return BcryptUtil.matches(password, this.getPassword());
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }

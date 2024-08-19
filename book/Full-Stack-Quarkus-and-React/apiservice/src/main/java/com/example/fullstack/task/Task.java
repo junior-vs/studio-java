@@ -105,4 +105,8 @@ public class Task extends PanacheEntity {
     public void setComplete(ZonedDateTime complete) {
         this.complete = complete;
     }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
 }

@@ -66,4 +66,8 @@ public class Project extends PanacheEntity {
     public void setUser(User user) {
         this.user = user;
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }
